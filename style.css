@@ -1,0 +1,55 @@
+/*NAVIGATION BAR STYLING
+/*Add a background color to the top navigation*/
+.topnav {
+    background-color: lightsteelblue;
+    overflow: hidden;
+}
+
+/*Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display:block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration-color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+/*Change the color of links on hover */
+.topnav a:hover {
+    background-color:ghostwhite;
+    color: black;
+
+}
+
+/*Add an active class to highlight the current page */
+.topnav a.active {
+    background-color:color-mix(in hsl decreasing hue, color percentage, color percentage);
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Page Content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky  {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movements (as the navigation bar gets a new position at the top of the page (position: fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
